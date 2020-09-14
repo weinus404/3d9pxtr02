@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+	<script>
+        var num=1;
+        var video_id;
+        function Myvid(num){
+            var vid = document.getElementById("output").innerHTML;
+            if (num==1) 
+                vid.src = "online.mp4";
+            else if (num==2) 
+                vid.src = "sangmul.mp4";
+            else 
+                alert('wtf');
+        }
+    </script>
+</head>
+<body>	
+	<video controls width="1000">
+        <source id="output"
+                src=""
+                type="video/mp4">
+        영상을 찾을수 없습니다.
+    </video>
+    <input type="button" onclick=Myvid(1); value="1" />
+    <input type="button" onclick=Myvid(2); value="2" />
+</body>
+</html>
